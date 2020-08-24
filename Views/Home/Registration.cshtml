@@ -1,0 +1,27 @@
+﻿
+
+
+@model Movie
+
+
+
+    <form action="Register" method="post">
+        
+        Movie Title <input type="text" name="Title" value="@Model.Title" />@Html.ValidationMessageFor(m => m.Title)<br />
+
+       
+        Genre: <br /> @Html.ValidationMessageFor(m1 => m1.Genre)
+        &nbsp;  Horror<input type="radio" name="Genre" value="Horror" /><br />
+        &nbsp; Comedy<input type="radio" name="Genre" value="Comedy" /><br />
+        &nbsp; Drama<input type="radio" name="Genre" value="Drama" /><br />
+        &nbsp; Thriller<input type="radio" name="Genre" value="Thriller" /><br />
+
+        Date Made <input type="date" name="Year" value="@Model.Year" /> @Html.ValidationMessageFor(m2 => m2.Year) <br />
+        
+        Actors <input type="text" name="Actors" value="@Model.Actors" /><br />
+ 
+        Directors <input type="text" name="Director" value="@Model.Directors" /><br />
+        <input type="submit" value="Register new movie!" />
+
+    </form>
+ 
