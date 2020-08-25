@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using System.Collections.Generic;
+@using _08202020_Lab21Lab25.Models;
+@using Microsoft.AspNetCore.Mvc;
+@using System;
+@using System.Text.Json;
+
+
+
+
+<h2>Favorite Movie List</h2>
+
+@{List<Movie> favMovieList = new List<Movie>();
+    var myList = Context.Session.GetString("favMovieSession") ?? "EmptySession";
+    if (myList != "EmptySession")
+    {
+        favMovieList = JsonSerializer.Deserialize<List<Movie>>(myList);
+        for (int i = 0; i < favMovieList.Count(); i++)
+        {
+            <p>@(i + 1).@favMovieList[i].Title</p>
+        }
+    }
+    else
+    {
+        <p>There are no movies in your Favorites</p>
+    }
+}

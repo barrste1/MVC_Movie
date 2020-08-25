@@ -1,5 +1,31 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http;
+@using System.Collections.Generic;
+@using _08202020_Lab21Lab25.Models;
+@using Microsoft.AspNetCore.Mvc;
+@using System;
+@using System.Text.Json;
+
+
+
 
 @model Movie
 
-<p>@Model.Title successfully added to the database!</p>
+
+<p>@Model.Title successfully added to the Favorite List!</p>
+
+@*@{
+
+    var favMovieList = JsonSerializer.Deserialize<List<Movie>>(Context.Session.GetString("favMovieSession"));
+    for(int i = 0; i < favMovieList.Count(); i++)
+    {
+        <p>@(i+1).@favMovieList[i].Title</p>
+    }*@
+
+
+    @*var savedMovie = Context.Session.GetString("favMovieSession");
+    movieList = JsonSerializer.Deserialize<List<Movie>>(movieListJSON);
+<h2>@savedMovie successfully added to the favorite list!</h2>
+<a href="/Sessions/RemoveBook" class="btn-danger">Remove Book Session</a>*@
+
+
+

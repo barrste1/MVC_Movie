@@ -37,3 +37,5 @@ C:\Users\Stephen Barr (Work)\source\repos\08202020_Lab21Lab25\obj\Debug\netcorea
 C:\Users\Stephen Barr (Work)\source\repos\08202020_Lab21Lab25\obj\Debug\netcoreapp3.1\08202020_Lab21Lab25.csproj.CopyComplete
 C:\Users\Stephen Barr (Work)\source\repos\08202020_Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\Registration.cshtml.g.cs
 C:\Users\Stephen Barr (Work)\source\repos\08202020_Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\Result.cshtml.g.cs
+C:\Users\Stephen Barr (Work)\source\repos\08202020_Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\FavList\Index.cshtml.g.cs
+C:\Users\Stephen Barr (Work)\source\repos\08202020_Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\DisplayFavList.cshtml.g.cs
